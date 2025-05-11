@@ -63,12 +63,12 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Brand colors
+				// Brand colors updated to better match the provided images
 				brand: {
-					red: '#D72638',
-					yellow: '#FFD23F',
-					green: '#21A179',
-					dark: '#2E2E2E',
+					red: '#e82825',     // Updated to match red in logo
+					yellow: '#FFD100',  // Brighter yellow like in the images
+					green: '#21A179',   // Keeping the green accent
+					dark: '#000000',    // Pure black like in the restaurant images
 				}
 			},
 			borderRadius: {
@@ -126,6 +126,8 @@ export default {
 			backgroundImage: {
 				'hero-pattern': "url('/img/hero-pattern.png')",
 				'pattern-light': "url('/img/pattern-light.svg')",
+				'pattern-food': "url('https://www.transparenttextures.com/patterns/food.png')",
+				'pattern-waves': "url('https://www.transparenttextures.com/patterns/asfalt-light.png')",
 			},
 		}
 	},

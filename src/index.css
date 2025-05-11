@@ -14,11 +14,11 @@
     --popover: 0 0% 100%;
     --popover-foreground: 215 25% 27%;
 
-    --primary: 355 70% 50%;
+    --primary: 0 98% 53%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 43 100% 62%;
-    --secondary-foreground: 215 25% 27%;
+    --secondary: 52 100% 50%;
+    --secondary-foreground: 0 0% 0%;
 
     --muted: 220 14.3% 95.9%;
     --muted-foreground: 220 8.9% 46.1%;
@@ -31,7 +31,7 @@
 
     --border: 220 13% 91%;
     --input: 220 13% 91%;
-    --ring: 355 70% 50%;
+    --ring: 0 98% 53%;
 
     --radius: 0.5rem;
   }
@@ -94,5 +94,18 @@
   
   .menu-item {
     @apply rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow bg-white;
+  }
+
+  /* New classes for Mr. Kottu Grand style */
+  .kottu-pattern {
+    @apply bg-pattern-food bg-repeat;
+  }
+
+  .kottu-card {
+    @apply bg-brand-yellow text-brand-dark rounded-lg overflow-hidden shadow-md;
+  }
+  
+  .kottu-section {
+    @apply bg-black text-white py-16;
   }
 }
