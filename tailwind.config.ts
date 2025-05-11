@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,13 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Brand colors
+				brand: {
+					red: '#D72638',
+					yellow: '#FFD23F',
+					green: '#21A179',
+					dark: '#2E2E2E',
 				}
 			},
 			borderRadius: {
@@ -84,12 +92,41 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'sizzle': {
+					'0%, 100%': {
+						transform: 'translateY(0)'
+					},
+					'25%': {
+						transform: 'translateY(-5px) rotate(-2deg)'
+					},
+					'75%': {
+						transform: 'translateY(-3px) rotate(2deg)'
+					}
+				},
+				'float': {
+					'0%, 100%': {
+						transform: 'translateY(0)'
+					},
+					'50%': {
+						transform: 'translateY(-10px)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'sizzle': 'sizzle 1s ease-in-out infinite',
+				'float': 'float 5s ease-in-out infinite'
+			},
+			fontFamily: {
+				sans: ['Poppins', 'sans-serif'],
+				heading: ['Montserrat', 'sans-serif'],
+			},
+			backgroundImage: {
+				'hero-pattern': "url('/img/hero-pattern.png')",
+				'pattern-light': "url('/img/pattern-light.svg')",
+			},
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
