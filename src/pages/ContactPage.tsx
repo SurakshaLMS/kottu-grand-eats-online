@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -6,6 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, Phone, Mail, Clock, Facebook, Instagram } from 'lucide-react';
 import { useToast } from "@/hooks/use-toast";
+import { Link } from "react-router-dom";
 
 const ContactPage = () => {
   const { toast } = useToast();
@@ -15,7 +15,7 @@ const ContactPage = () => {
     toast({
       title: "Message Sent!",
       description: "We'll get back to you as soon as possible.",
-      variant: "success",
+      variant: "default",
     });
   };
   
