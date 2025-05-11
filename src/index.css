@@ -14,8 +14,8 @@
     --popover: 0 0% 100%;
     --popover-foreground: 215 25% 27%;
 
-    --primary: 0 98% 53%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 45 100% 50%;
+    --primary-foreground: 0 0% 0%;
 
     --secondary: 52 100% 50%;
     --secondary-foreground: 0 0% 0%;
@@ -23,15 +23,15 @@
     --muted: 220 14.3% 95.9%;
     --muted-foreground: 220 8.9% 46.1%;
 
-    --accent: 162 66% 38%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 45 100% 50%;
+    --accent-foreground: 0 0% 0%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 220 13% 91%;
     --input: 220 13% 91%;
-    --ring: 0 98% 53%;
+    --ring: 45 100% 50%;
 
     --radius: 0.5rem;
   }
@@ -73,7 +73,7 @@
 
 @layer components {
   .btn-primary {
-    @apply bg-brand-red text-white hover:bg-red-700 transition-colors px-6 py-3 rounded-md font-medium;
+    @apply bg-brand-yellow text-black hover:bg-yellow-500 transition-colors px-6 py-3 rounded-md font-medium;
   }
   
   .btn-secondary {
@@ -81,7 +81,7 @@
   }
   
   .btn-outline {
-    @apply border-2 border-brand-red text-brand-red hover:bg-brand-red hover:text-white transition-colors px-6 py-3 rounded-md font-medium;
+    @apply border-2 border-brand-yellow text-brand-yellow hover:bg-brand-yellow/20 hover:text-brand-yellow transition-colors px-6 py-3 rounded-md font-medium;
   }
   
   .section-padding {
@@ -93,7 +93,7 @@
   }
   
   .menu-item {
-    @apply rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow bg-white;
+    @apply rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow bg-black;
   }
 
   /* New classes for Mr. Kottu Grand style */
